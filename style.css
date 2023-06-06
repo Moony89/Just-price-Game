@@ -1,0 +1,40 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+}
+.interface{
+    background-color: cadetblue;
+    width: 60%;
+    margin: 5%;
+    padding: 2%;
+    border: 10px solid salmon;
+    border-radius: 30%;
+}
+h1{
+    color: antiquewhite;
+
+}
+
+input{
+    color: brown;
+    font-weight: bold;
+
+}
+#result{
+    font-weight: bold;
+    color: brown;
+}
+#btn2{
+    width: 15%;
+    height: 2em;
+    margin-top: 2%;
+    border-radius: 75%;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    padding-left: 21%;
+    align-items: center;
+    width: max-content;
+}

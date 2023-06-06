@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Just Price Game</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+
+        <section class="interface">
+
+            <h1> Welcome to the Just Price Game !</h1>
+            <div class="flex">
+                <label for="guess">Enter your Guess here (number between 1 and
+                    100): </label>
+                <input type="number" id="guess" placeholder="Number">
+
+                <button id="btn1" onclick="checkGuess()"> Submit </button>
+            </div>
+
+            <h4> Result</h4>
+
+            <textarea name="result" id="result" cols="30" rows="5"></textarea>
+            <br>
+
+            <button id="btn2" onclick="resetGame()">Reset Game</button>
+        </section>
+
+    </body>
+</html>
