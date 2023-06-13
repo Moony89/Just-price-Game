@@ -6,6 +6,7 @@ const randomGift = lots[randomIndex];
 // variable avec des URL d'imgs pour 
 const imgs = ['https://unsplash.com/fr/photos/LhqLdDPcSV8', 'https://unsplash.com/fr/photos/YDZPdqv3FcA', 'https://unsplash.com/fr/photos/GdTLaWamFHw'];
 
+
 // Récupérer l'input de l'User :
 
 const userGuess = document.getElementById('guess');
@@ -63,9 +64,38 @@ function msgResult(message) {
 // Créer une function resetGame :
 
 function resetGame() {
-    document.getElementById('guess').value = ' ';
+    /*document.getElementById('guess').value = ' ';
     document.getElementById('btn1').disabled = false;
     document.getElementById('result').textContent = ' ';
+    */
+   location.reload();
+
 };
 
+/* créer un bouton qui logera en console ou sur votre page web un chiffre alétoire compris entre 500 et 1000 et ceux toutes les 2 secondes.
+
+const showRandomNumber = document.querySelector('button.progress-bar');
+
+let i = 0
+setInterval(() => {
+    const randomNumber = Math.floor(Math.random() * (1000 - 500)) + 500;
+    console.log(randomNumber);
+    
+    document.querySelector('button.progress-bar').textContent = randomNumber;
+}, 2000);
+*/
+
+// Créer un décompte sur le jeu qui déclenche un Game over au bout de 30 secondes :
+
+let i = 30;
+const timer = setInterval(() => {
+    i--;
+    document.querySelector('button.timer').textContent = i + ' secondes';
+    if(i === 0) {
+        clearInterval(timer);
+        msgResult('Game over! Le temps est écoulé..');
+    }
+}, 1000);
+ 
+// Créer une progress-bar combinée avec le Timer :
 
